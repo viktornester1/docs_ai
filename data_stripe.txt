@@ -1,0 +1,218 @@
+Dear Stripe community:
+Growing up, we only gradually came to realize that things around us weren’t just always there. Actual 
+people, with concrete visions, working for a long time, made them happen. That hotel, that park, that railway. The world is a museum of passion projects.
+This basic wonder is what animates us at Stripe. Things around us could be so much richer—in every 
+sense of that word—than they are. The dedication of doers is what makes the world a continually improving place, and we’re keen to play a small role in helping make that happen.
+We enormously appreciate the trust of the millions of businesses that rely on Stripe. As Stripe grows, we 
+want to make sure that anyone interested has a chance to hear what we’re up to.
+Collectively, businesses built on Stripe processed more than $817 billion in total volume in 2022, up 26% 
+from the prior year. (Ecommerce, an imperfect but relevant comparison, grew 7% last year.) This is a significant deceleration from the breakneck growth that we saw during 2020 and 2021. At the same time, we are as confident as ever in the internet economy’s long-term prospects, and we’re heartened by the steady advancement of the millions of businesses we serve in the face of banking crises, war, pestilence, energy shocks, supply chain issues, inflation, and broader volatility.
+More than 100 companies now handle more than $1 billion in payments with Stripe every year. This set 
+continues to grow rapidly, expanding by more than 50% each year since 2018. Some of this expansion is about established titans, but most isn’t. Part of the joy of working at Stripe is partnering with early startups on their way to meteoric success. Of these 100+ category leaders, more than half have grown their revenue 10x while on Stripe, and over a quarter have grown 100x. Many now-household names, such as Instacart, Substack, and DoorDash (originally as “Palo Alto Delivery”) charged their customers with us from the very beginning.
+In total, the number of new businesses coming to Stripe increased by 19% in 2022, with an average of 
+more than 1,000 new ventures launched every day. While the US is currently our largest market, 55% of the businesses that joined Stripe last year were based outside of the US. Stripe now supports businesses in more than 50 countries.
+Our first operating principle is “Users First.” Part of the value of serving smart customers is that just 
+listening to suggestions is a surprisingly effective product strategy. Last year, substantially informed by user feedback, we shipped 244 new user-facing features and 336 API updates. We’re always eager to hear more about what would help you—get in touch via Twitter or founders@stripe.com.
+knownApril5,2023
+An important but little-reported fact is that the population-wide propensity to start a business appears to 
+have increased significantly and persistently since the onset of the COVID pandemic. We don’t fully understand why (and would be keen to read further research on this question), but various data sources depict a consistent picture. According to the , the rate of business formation has increased by 44% since 2019. Delaware, similarly, saw 24% more incorporations in 2022 than in 2019. Y Combinator reported a record number of applicants for their most recent batch. These data points match what we see: 
+, our service for helping startups get off the ground, saw a remarkable 155% more new 
+companies started in 2022 than in 2019.
+We’re excited by this trend and think everyone else should be too. Entrepreneurship is the lifeblood of a 
+dynamic economy. For all the gloomy economic headlines, it’s important to contextualize with the fact that more new ventures are being started today than during the market boom of 2021.
+In response to this, we’ve lots of improvements to Atlas. Last year, we added company name 
+search, a visual cap table, inline document signing, more accurate ETAs, faster EIN issuance, pre-filled 83(b) forms, and significant that help seed capital stretch further.
+Despite the encouraging startup formation trends, the environment is also, in many respects, getting harder. After a decade-long bull run, venture capital invested in startups declined by two-thirds in Q4 2022 compared to Q1 2021. While the market may have overcorrected, a correction was in order: in describing financing conditions in 2021, few would reach for “healthy” as their first adjective.
+As a consequence of tightening conditions, we are seeing startups monetize earlier and in more ways. 
+We’re working hard to make this easier and faster across the board.
+The most basic way is to reduce the time to a business’s first revenue dollar. Software engineers know that US Census
+Stripe Atlas
+shipped
+credits packagesStartupsOur mission is to grow the GDP of the internet. We are unabashed boosters of entrepreneurship and 
+capitalism, and think that a more vibrant internet economy will bring broadly-felt prosperity. We try to help in four primary ways
+Increasing the rate of new business creation by lowering the cost and complexity of starting a business
+Helping established enterprises adapt to the internetReducing impediments to payments, especially across borders, to unlock more economic activity. (There is 
+a surprising amount of low-hanging fruit here that we’ll get into further down.
+Lowering the costs of scaling by providing simple, reliable, secure, and developer-friendly APIs and 
+services.
+In this letter, we’ll share our progress on these four categories and touch on a handful of trends that have 
+caught our eye.
+
+TheAIrevolution
+A new alien technology has landed, and it goes by the name of the “large language model.” Progress is 
+rapid, and, in recent weeks, we’ve seen the launch of OpenAI’s GPT-4, Midjourney v5, Google Bard, Anthropic’s API, Canva’s new creative tools, and many more releases besides.
+These language models will act as Heelys for cognitive tasks. A recently published by a 
+group at MIT found that having access to an LLM cut the time to complete a variety of writing tasks by 37%, while the writing quality also rose by 18%. In a similar vein, LLM-based tools can significantly 
+human performance on programming tasks. As with any new technology, challenges abound 
+(both Google’s and Microsoft’s search demos suffered from hallucinations), but the progress is remarkable.working paper
+accelerate
+Steampunkpaymentcards, 
+courtesyofMidjourneyv5the only thing better than clean code is no code, and anumber of companies start by sending Payment Links (!) to early customers, which they can also as a buy or subscribe button as soon as they have a landing page. We’ve shipped a truckload of , and, as a 
+result, businesses built on Stripe created more than 10 million links in 2022.
+More broadly, we’ve significantly expanded our suite of no-code products. Over the past year, we launched 
+automated SaaS (supporting models including flat-rate, per-seat, and tiered pricing), 
+upgraded Stripe Billing’s (to allow customers to self-manage payment details, invoices, 
+and subscriptions), and improved our tools (to retain revenue that would otherwise be 
+lost to involuntary churn).
+This represents an important product strategy shift for Stripe. In the beginning, we strictly focused on 
+easy-to-use payments APIs. Now, we’re seeing that we can accelerate product development for startups by providing scaffolding and hosted UIs for managing revenue. Our goal is to eliminate all the duplicative hassle that comes with scaling revenue for an early-stage company. It's lunacy for every company to reimplement the same flows.growing 
+try oneembed
+new Payment Links functionality
+pricing tables
+customer portal
+revenue recovery
+The frenetic pace also means that AI companies are particularly keen to avoid any work that doesn’t help 
+them differentiate. For example, when OpenAI launched ChatGPT in November, it took them to reach one million users, making it perhaps the fastest-adopted consumer tech product ever. (It took Facebook 10 months to hit that milestone.) For its flagship products, ChatGPT Plus and DALL·E, OpenAI uses Stripe to accept payments (offering dozens of payment method choices for global customers), manage subscriptions, offer , calculate sales taxes, recognize revenue, fight fraud, and 
+more. Stripe enables them to scale their revenue far faster and more efficiently than would otherwise be possible.five days
+one-click checkout
+Internally, it’s clear that ML and AI advances will continue to improve the quality of our products and to make them even easier to use. Alongside GPT-4’s launch, we launched. Every 
+user can soon benefit from an AI research assistant who has devoured the whole Stripe documentation and is available 24x7 to developers designing their integrations. We have also seen significantly improved fraud detection performance thanks to -based models that can better handle Stripe’s scale 
+and breadth of data.
+Part of what we enjoy about the tech industry is our collective excitability. As a community of incorrigibly 
+inveterate optimists, we never seem to quite internalize that the Gartner hype cycle is a cycle, and categories that captivate (scooters and e-bikes, 15-minute grocery delivery, NFTs, the metaverse...) invariably recede from their initial peaks of excitement. Some of this will no doubt happen with AI, but we do believe that the capabilities of LLMs and transformers will prove fundamental and enduring. Knowledge workers will become more productive. Labor-intensive tasks, from quality assurance to bookkeeping, will see more automation. Generative AI puts some kind of simulacrum of a good designer in the hands of everyone with an internet connection. The world is now 8 billion people plus a quasi-infinite number of these strange creatures, and the economics of the coming years will be interesting indeed.GPT-4-powered Stripe Docs
+transformerNewbusinessessigningupforStripewith.aiTLDs
+2012201320142015201620172018201920202021202220232024This wave of innovation is happening on Stripe. We ran the numbers, and a sizable majority of the AI 
+startups listed in one of the most extensive we could find use Stripe. Many are already building real businesses around the new technology, including , , , , , 
+, , , , , , and a long list of others.trackers
+OpenAIAnthropicRunwayMidjourneyCruise
+Copy.aiOtterJasperLambda LabsCoreWeaveDescript
+In the three years before the pandemic, 63% of the new breakouts that we saw in the San Francisco 
+Bay Area were based in the city of San Francisco itself. Since 2020, only 46% have been
+Around 26% of the US-based breakout companies that we see are based in California. The inverse of 
+this fact is important: three-quarters are not based in California. California’s share appears to have 
+been declining gradually, however. In 2018, for example, 31% of new breakout companies were headquartered in the state
+In order, the top startup hubs in the US are: the Bay Area, New York, Los Angeles, Miami, and Austin. 
+Miami’s growth has indeed been quite striking in our data: detected breakout companies are up by 89% in 2021/2022 as compared to 2016/2017
+Outside the US, the top hubs in our data are (in order): London, Singapore, Paris, Tokyo, and Toronto. 
+(Of these, Tokyo is growing fastest on a relative basis.) French entrepreneurial dynamism particularly stands out: the top three countries are the US, the UK, and France.
+GrowthinbreakoutstartupsonStripe:2021/2022vs.2016/2017
+BayAreaLAAustinNYCMiamiLondonSingaporeSingaporeParisTokyoToronto150%
+100%
+50%
+0
+In our data, there are more breakout companies headquartered outside a top 20 startup hub than there 
+are in the Bay Area (the leading hub). This is worth bearing in mind. While Silicon Valley is frequently the center of attention, it’s easy to underestimate the extent to which technology companies are now part of the broad fabric of the US and of the world. The technology community has been remarkably successful at disseminating the tacit knowledge required to build successful startups. (We’re trying to help a little with
+.) Investment scenes outside of Silicon Valley are considerably more robust than they were 
+just five years ago. We look forward to supporting this continued diffusion over the coming years.
+
+Stripe PressSiliconValleyiseverywhere 
+Since the pandemic, shifts in the dispersion of startups have been hotly debated. We decided to look at our data on “breakout startups”: that is, new companies with unusually rapid revenue ramps. As a proxy, this isn’t perfect: some breakout companies come out of the gate more slowly, and some companies with rapid revenue ramps aren’t truly breakout startups. We don’t operate in every market (most notably, China). Nonetheless, the trends we see strike us as interesting.
+Enterprises
+The month before Stripe launched in 2011, Marc Andreessen introduced the concept of “
+” in the Wall Street Journal. He made the case that the opportunities for the deployment of 
+software across every crevice of the economy were being substantially underestimated. Fast-forward 12 
+years: of the world’s 15 largest businesses are technology companies, and their value is growing faster than any other sector.software eating 
+the world
+seven
+Aggregatemarketcapitalizationbysector
+201820192020202120222023$10T
+$7.5T
+$5T
+$2.5T
+$0Technology
+Healthcare
+Financial
+Energy
+Stripe grew up with companies in the technology sector, and we’re increasingly their platform of choice—
+we power 75% of the 2022 Forbes Cloud 100 and many of the largest internet companies, from to Zoom. Increasingly, however, some of the most august enterprises and established brands, such as the 
+, , (whose founders include Ralph Waldo Emerson and Harriet Beecher Stowe), 
+, and are turning to Stripe to technologize their businesses.Amazon 
+PGAToyotaThe Atlantic MANMaersk 
+When enterprises adopt Stripe, it’s typically as part of improving their product in a fundamental way. For example, Urban Outfitters used Stripe to launch a peer-to-peer resale fashion , taking 
+inspiration from the upstarts that pioneered this model. Carmakers such as are selling over-the-air software upgrades directly to consumers. Airline launched a premium subscription-based loyalty program. Reddit has expanded beyond advertising, enabling art creators in more than 100 countries to get paid directly by fans. We worked with La Redoute (founded in 1837) to transform their customers’ buying experience.marketplace
+BMW
+ANA 
+These companies are taking advantage of the breadth of Stripe’s platform. Many use, our core technology for managing platforms and marketplaces, which now enables payouts to more than 116 
+countries (in both fiat or crypto). There are now more than 100,000 active in-person devices worldwide, including in the Guggenheim Museum, the Royal Albert Hall, and, most importantly,Connect
+Terminal
+the National Gallery of Ireland. Many users are ramping in-person payments with no dedicated hardware 
+at all, thanks to Tap to Pay on iPhone and Android. At a time when it’s increasingly difficult for small businesses to get a bank loan, companies like Glofox and BloomNation are providing businesses on their platforms access to financing with Stripe Capital (with no physical paperwork required). And with, businesses like are scaling commercial card programs in more than 20 countries.
+When an established company fails to deliver an obvious improvement, it’s usually not because they don’t 
+have the idea. As anyone who has tried to deliver these initiatives knows, it’s often the mundane challenges that get in the way. Will the data sync? How will we bill? Could this delay closing our books? Such questions vex at every company, but they’re more complicated at scaled companies with established systems.Issuing
+Ramp 
+We think those limitations are fixable, and should be fixed. We’re increasingly helping to do so in the realm of revenue and finance automation. Last year, we launched , so users like Lime and 
+Zoom can sync their Stripe data with Amazon Redshift and Snowflake Data Cloud. We improved 
+to give businesses like Notion and Shipt a fully-automated, real-time view of their revenue. To 
+help enterprises (as well as users of all sizes) move faster, we built the , introduced 
+new connectors to integrate Stripe Billing directly with and , and launched the 
+with more than 1,800 Stripe-vetted partners including , , 
+, , and .Stripe Data Pipeline
+Revenue 
+Recognition 
+Stripe App Marketplace
+NetsuiteSalesforceStripe 
+Partner Ecosystem program SalesforceAccenture
+WPPSlalomThoughtworks
+Payments
+Transacting online is still not a solved problem. This is, in our view, surprising. Several decades into the internet’s history, we take for granted that so many aspects of it now work so well. Internet connections are always-on. An entire class of security problems has been eliminated by the new default toward all web connections being SSL-encrypted. For developers, IE6 compatibility is no longer required, and, somewhere along the way, centering divs ceased to be a Hard Problem.
+And yet most of what you encounter in payments is still shockingly deficient. Checkout pages across the 
+internet are riddled with needless friction. 10% of payments for no good reason when transacting online. (Imagine if your car didn’t start one in ten times?)
+At Stripe, we obsess over fixing this. We focus on two key metrics: conversion rate (the fraction of user 
+sessions that complete a purchase) and authorization rate (the fraction of attempted transactions that actually succeed).still fail 
+Checkout conversion
+In 2022, we thousands of checkout flows from businesses around the world. We found that 95% contained five or more unforced errors—barriers like asking customers to painstakingly scroll through dates to input card expiry. (Our tests show that this is worse than enabling them to type the date directly.) Individually, errors like these might be only mild irritants, but, strung together, they impede checkout completion and lead to measurably lower revenue.reviewed 
+Last year, more than 100,000 Stripe businesses upgraded to our new, highly-optimized checkout 
+products:(where Stripe manages the whole checkout page for you) and the(where you have your own webpage and Stripe manages the payment form). In a controlled study, businesses that adopted the Payment Element saw a 7% average increase in revenue compared to those that did not. Some of what made this possible:Checkout Payment Element 
+We drastically reduced how long it takes for a buyer to complete checkout, thanks to dozens of UI 
+tweaks and cross-device optimizations
+We updated Stripe’s “Remember Me” functionality (now known as ). Link-enabled buyers complete 
+their checkouts in less than six seconds, on average, and businesses see meaningfully higher conversion rates
+We added support for a range of local payment methods and wallets, including Konbini in Japan, Blik in 
+Poland, and Cartes Bancaires for businesses outside its native France
+We implemented a recommendation engine that presents the right payment methods to 
+buyers based on their country
+We built the Address Element, so that any business can offer typeahead search for billing and shipping 
+addresses
+We introduced , which safely avoids superfluous Strong Customer 
+Authentication redirects for European cardholders.
+While these might sound individually prosaic, we want to re-emphasize just how significant—7% more revenue!—the headline findings are. (In an industry obsessed with basis points, it’s rare to see integer percentages.) We’re sometimes tempted to warn businesses that aren’t using Stripe’s hosted checkout surfaces that they are operating in “low-revenue mode.” In principle, any of our customers could implement all of the above themselves, but, in practice, nobody has the time. By using Stripe, any business can tap into the optimization efforts of 7,000 of the world’s best payments experts, and our experiments show consistently that the revenue effects are large.Link
+dynamically
+delegated authentication
+Authorization
+An attempted payment could be declined for , including incorrectly entered 
+credentials, card expiration, or suspected fraud. Last year we improved , 
+, and , and launched our , all with the goal of 
+boosting authorization rates. Generally, Stripe users don’t need to do any integration work to see the benefits from these advances
+Adaptive Acceptance uses machine learning to selectively retry payments in real time, dynamically 
+adjusting dozens of factors to increase the odds of acceptance before a response is returned to the buyer. On average, on-the-fly optimizations like these generate an extra 0.7% of top-line revenue.any number of reasons
+Adaptive Acceptancenetwork 
+tokenscard account updaterEnhanced Issuer Network
+Network tokens and card account updater help prevent that situation where you get a new credit or 
+debit card and a beloved subscription stops working. When this happens, it’s frustrating for the 
+consumer (who has to go update their details) and frustrating for the business (which loses revenue if they don’t). In the last six months alone, these two technologies have yielded billions of dollars in incremental revenue for Stripe customers. (Of course, consumers should also be able to track down and cancel unwanted subscriptions, and we’re pleased to see many banks making that easier.
+This year, we launched our Enhanced Issuer Network, the culmination of more than a decade of 
+partnership with issuing banks. This network feeds scores directly to the card issuer 
+making an authorization decision, leading to fewer spurious declines and more revenue for Stripe’s users. Our data shows authorization rate improvements of up to 2%, paired with an 8% reduction in fraud rates for eligible transactions. This is nearly a Pareto improvement: good for businesses, good for consumers, good for issuers, and good for Stripe. It is, however, bad for fraudsters, who are stymied by more accurate detection.
+Our customers are noticing these improvements. Hargreaves Lansdown, the UK’s largest retail investment platform, that, after integrating with Stripe’s payment optimization tools, they reduced failed payments by £540 million.Stripe Radar
+told us 
+Foundations
+One in ten people in the world transacted with a business powered by Stripe in 2022. When we think about security, reliability, and our regulatory obligations, our mental model is that we need to operate Stripe in a way that justifies the trust a large proportion of the world’s population has implicitly placed in us.
+Our API reliability is now consistently in excess of 99.999%, and, during the peak week of 
+, exceeded six nines (that is, 99.9999%)—the equivalent of around 600 milliseconds of 
+unavailability. (It takes about 300 milliseconds for a human to blink.)
+We proudly publish a of our 90-day trailing API availability, measured at the individual 
+transaction level. (Status pages, while common for core technology infrastructure, are not yet the norm in the payments industry.) We do this partially so users can quickly check if any issue they’re seeing might be on the Stripe side, but it has increasingly become a key reason businesses choose Stripe. Outages or lengthy maintenance windows are extremely disruptive for our customers and for their customers.
+The biggest distributed system at Stripe is our testing system. Stripe now comprises more than 50 million 
+lines of code. Each change is verified within 15 minutes by running a battery of tests that would take 50 days to run on a single CPU. These automated tests detect and prevent problems much better than humans ever could. In 2022, we deployed our core payments APIs 5,978 times (16.4 times a day on average). 1,100 of those deploys failed to meet our acceptance criteria, and were rolled back automatically.
+Cyber attacks are growing in prevalence and sophistication. For example, card testing attacks have 
+increased more than tenfold since 2019. (Successful attacks—those that impact our customers in any way—have declined in absolute terms, however, thanks to that we’ve made to Stripe Radar.)
+Black Friday and 
+Cyber Monday
+live tracker
+improvements
+We continue to invest in security at every layer of our stack: from data encryption, access controls, 
+ephemeral architecture, intrusion detection, and regular security audits at the infrastructure level, to real-time monitoring of transactions. Everyone at Stripe, including support staff, works in a full environment, backed by hardware tokens. As attacker sophistication grows, the fixed costs of defense continue to grow. Though we deliberately avoid describing the mechanics in any detail, we’re committed to being a leader in this space.
+Lastly, we design reliability into our financial operations. Stripe’s funds are held with systemically 
+important financial institutions (SIFI). We are continually monitoring the world’s financial partners and issuers. When even a single issuer is experiencing problems (such as server downtime), automated alerting enables our operations team to take immediate actions to minimize any customer disruption.zero-trust 
+What comes next
+As we said at the beginning, the present world is anything but dull. While 2019 feels like a different era, it’s entirely plausible that the changes of the next four years will be greater than those that just ensued. We’ll all need our wits about us.
+We’re fundamentally optimistic about what is to come. The internet remains one of the most potent 
+enablers of opportunity and advancement in the history of humanity. Several billion people recently immigrated to earth’s most vibrant city. The world should be more prosperous than it is, and, thanks to the new possibilities afforded by software and better connectivity, virtually every facet of our existence can be meaningfully enriched.
+It seems to us a certainty that greater rates of change—often a cliché, but now an emphatic truth—will 
+increase the returns to agility in every pursuit. The business model flexibility and execution speed that Stripe enables have yielded dividends for the world’s most ambitious organizations. Our hope is that these capabilities can increasingly benefit businesses of all sizes and flavors. By helping companies avoid being hemmed in by their existing infrastructure, we hope that they can focus more on inventing new products and doubling down on what actually makes them special.
+If the topics covered in this letter are your cup of tea, we would love to host you at Stripe Sessions, our in-
+person annual conference, on Wednesday, May 3, at Pier 48 in San Francisco. You’ll hear from other founders and industry experts on how they’re adapting, and we’ll share Stripe’s in-flight product work. (And if you can’t join us in person, you can watch the keynote online.) You can register at 
+.
+Best,
+Patrick and John
+sessions.stripe.com
